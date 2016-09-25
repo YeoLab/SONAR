@@ -17,3 +17,4 @@ SONAR/src/get_PPI_feature_mat_NewRBPlist_v4.py
 SONAR/src/get_PPI_feature_mat_NewRBPlist_v4.pyc
 SONAR/src/run_SONAR.py
 SONAR/src/sonar.py
+dist/SONAR-0.1.0-py2.7.egg

@@ -4,7 +4,7 @@ SONAR is an algorithm to predict proteins' RNA-binding capability based on their
 ## Install
 > cd SONAR_directory
 
-> python setup.py install
+> python setup.py install #PS: Please use the version: python 2.7.*
 
 ## Usage:
 1. Enter the SONAR software folder. 

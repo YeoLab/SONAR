@@ -19,7 +19,7 @@ def get_scores_for_allprot_via_cvTesting_oversampled(Xy_df, ycol, Score_df, n_fo
             X_test=np.array(Xy_df.iloc[test,:-1])
             y_test=np.array(Xy_df.iloc[test,-1])
             Xy_df_test_prot_names=list(Xy_df.iloc[test].index)
-            clf_SVM=svm.SVC(kernel='rbf', probability=False, class_weight={1:1.5}, gamma=0.01) #"probability=False": use confidence score to describe each sample
+            clf_SVM=svm.SVC(kernel='rbf', probability=False, class_weight={1:2.0}) #"probability=False": use confidence score to describe each sample
             scores=clf_SVM.fit(X_train, y_train).decision_function(X_test)
             score_list=zip(Xy_df_test_prot_names, scores)
 

@@ -21,7 +21,7 @@ def get_PPI_features(prot, G, RBP_set):
             NBhood3=G.neighbors(nb2)
             NBhood3.remove(nb1)
             NBhood3_total.extend(NBhood3)
-            
+    
     NBhood2_total=filter(lambda x: x!=prot ,NBhood2_total)
     NBhood3_total=filter(lambda x: x!=prot ,NBhood3_total)
     #print NBhood2_total
