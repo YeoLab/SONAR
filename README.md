@@ -4,10 +4,12 @@ SONAR is an algorithm to predict proteins' RNA-binding capability based on their
 ## Install
 > cd SONAR_directory
 
-> python setup.py install #PS: Please use the version: python 2.7.*
+> python setup.py install 
+
+PS: Please use the version: python 2.7.*
 
 ## Usage:
-1. Enter the SONAR software folder. 
+1. Go into the SONAR software folder. e.g., run "cd SONAR/" in the folder where you store SONAR.
 2. sonar -e Edge_list_File -r RBP_annotation_list [-p num_processes] [--outfile_feature_table feature_table_filename] [-o score_table_filename] [-R num_repeats]
 3. If the input files are not in the SONAR software folder, you have to
 specify the paths of these files in front of the filenames. By default, the output files will be put in the SONAR software folder. If you wanna make them in other folders, please specify the path of the folder in front of the filenames.
