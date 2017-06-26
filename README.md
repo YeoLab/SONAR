@@ -1,5 +1,6 @@
 # SONAR
 
+
 SONAR is an algorithm to predict proteins' RNA-binding capability based on their protein-protein interaction neighborhood. This program will run SONAR with your PPI network edge list and RBP annotation list and give you a score table which contains the classification scores for all the proteins appearing in the PPI network. The immediate result (i.e. feature table involved in the classification) will also be presented. The program may run for several hours, please be patient.
 ## Install
 > cd SONAR_directory
