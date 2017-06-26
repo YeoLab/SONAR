@@ -8,10 +8,9 @@ SONAR is an algorithm to predict proteins' RNA-binding capability based on their
 > python setup.py install           #PS: Please use Python 2 rather than Python 3 to run this command.
 
 ## Usage:
-1. Go into the SONAR software folder. e.g., run "cd SONAR/" in the folder where you store SONAR.
-2. sonar -e Edge_list_File -r RBP_annotation_list [-p num_processes] [--outfile_feature_table feature_table_filename] [-o score_table_filename] [-R num_repeats]
-3. If the input files are not in the SONAR software folder, you have to
-specify the paths of these files in front of the filenames. By default, the output files will be put in the SONAR software folder. If you wanna make them in other folders, please specify the path of the folder in front of the filenames.
+> sonar -e Edge_list_File -r RBP_annotation_list [-p num_processes] [--outfile_feature_table feature_table_filename] [-o score_table_filename] [-R num_repeats]
+
+By default, the output files will be put in the SONAR software folder. If you wanna make them in other folders, please specify the path of the folder in front of the filenames.
 
 ## Example:
 sonar -p 16 -r SONAR_directory/SONAR/Demo/RBP_merged_list.txt -e SONAR_directory/SONAR/Demo/BioPlex_interactionList_v4_edgelist.txt --outfile_feature_table=BioPlex_PPI_feature_table.xls -o SONAR_score_table_BioPlex_human.xls
@@ -29,12 +28,17 @@ output files will be put in the SONAR software folder. If you wanna make them
 in other folders, please specify the path of the folder in front of the
 filenames.
 
+## Reference:
+Brannan KW, Jin W, Huelga SC, Banks CA, Gilmore JM, Florens L, Washburn MP, Van Nostrand EL, Pratt GA, Schwinn MK, Daniels DL, Yeo GW. SONAR Discovers RNA-Binding Proteins from Analysis of Large-Scale Protein-Protein Interactomes. Molecular Cell. 2016 Oct 20;64(2):282-93.
 
-Please contact me if you have problems running this program.
+
+Please contact me if you have any problem running this program.
 Email address: wenhao.jin@u.nus.edu (Wenhao Jin)
+
+
 
 
 
 Wenhao Jin
 
-5 Sep, 2016
+6 Oct, 2016
